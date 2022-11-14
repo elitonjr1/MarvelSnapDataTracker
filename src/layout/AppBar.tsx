@@ -2,7 +2,7 @@ import React from "react";
 import './styles.css';
 import styled from 'styled-components';
 import Logo from './components/mvsnaplogo.png';
-import SearchBar from "./components/searchbar";
+import SearchBar from "./components/SearchBar";
 import AppBarItems from "./components/AppBarItems";
 
 const AppBar = (props:any) => {
