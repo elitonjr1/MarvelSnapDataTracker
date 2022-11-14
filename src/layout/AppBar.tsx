@@ -8,7 +8,7 @@ import AppBarItems from "./components/AppBarItems";
 const AppBar = (props:any) => {
     return <Main>
               <Content>
-                <Row><a href="/"><LogoSnap src= {`MarvelSnapDataTracker${Logo}`} alt="Logo" /></a></Row>
+                <Row><a href="/"><LogoSnap src= '../../static/mvsnaplogo.png' alt="Logo" /></a></Row>
                 <Row>Cards</Row>
                 <Row>Decks</Row>
                 <Row>News</Row>
