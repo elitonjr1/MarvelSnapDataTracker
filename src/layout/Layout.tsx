@@ -1,7 +1,6 @@
 import React from "react";
 import './styles.css';
 import AppBar from './AppBar';
-import { title } from "process";
 import Footer from "./Footer";
 
 export type LayoutProps = {
