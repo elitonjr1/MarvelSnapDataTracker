@@ -1,0 +1,61 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Sy\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add styled-jsx
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Users\Sy\Desktop\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\Sy\Desktop\cmder\vendor\conemu-maximus5;C:\Users\Sy\Desktop\cmder\vendor\conemu-maximus5\ConEmu;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Sy\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Program Files\heroku\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Sy\Desktop\cmder\vendor\bin;C:\Users\Sy\Desktop\cmder;C:\Users\Sy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sy\Ap;C:\Users\Sy\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Sy\Desktop\Projetos_Curso\MarvelSnapDataTracker\node_modules\@lmdb\lmdb-win32-x64\node.abi108.node'
+
+npm manifest: 
+  {
+    "name": "marvel-snap",
+    "version": "1.0.0",
+    "private": true,
+    "description": "marvel-snap",
+    "author": "elitonjr1",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean",
+      "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+      "babel-plugin-styled-components": "^2.0.7",
+      "gatsby": "^5.0.0",
+      "gatsby-plugin-styled-components": "^6.0.0",
+      "gatsby-plugin-styled-jsx": "^6.0.0",
+      "node": "^18.12.1",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "styled-components": "^5.3.6",
+      "styled-jsx": "^5.1.0"
+    },
+    "devDependencies": {
+      "@types/node": "^18.11.9",
+      "@types/react": "^18.0.25",
+      "@types/react-dom": "^18.0.8",
+      "@types/styled-components": "^5.1.26",
+      "typescript": "^4.8.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
