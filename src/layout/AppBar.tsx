@@ -1,7 +1,7 @@
 import React from "react";
 import './styles.css';
 import styled from 'styled-components';
-import Logo from '../static/mvsnaplogo.png';
+import Logo from '../../static/mvsnaplogo.png';
 import SearchBar from "./components/SearchBar";
 import AppBarItems from "./components/AppBarItems";
 
