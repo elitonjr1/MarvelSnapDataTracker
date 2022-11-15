@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styled from 'styled-components';
-import WebFont from 'webfontloader';
 
 export type HeaderProps = {
     title: string;
@@ -10,13 +9,6 @@ export type HeaderProps = {
 
 
 const MainParagraph = ({title, description} : HeaderProps) => {
-    useEffect(() => {
-        WebFont.load({
-          google: {
-            families: ['Ultimatum Heavy Italic', 'Helvetica Neue', 'Arial', 'Sans-Serif']
-          }
-        });
-       }, []);
 
     return <Header>
         
