@@ -2,9 +2,10 @@ import React from "react";
 import './styles.css';
 import AppBar from './AppBar';
 import Footer from "./Footer";
+import styled from "styled-components";
 
 export type LayoutProps = {
-    children: string;
+    children: any;
 }
 
 const Layout = (props : LayoutProps) => {
@@ -20,3 +21,8 @@ const Layout = (props : LayoutProps) => {
 }
 
 export default Layout;
+
+const Content = styled.main`
+    max-width: 960px;
+    margin: auto;
+`
