@@ -6,7 +6,7 @@ When the new season begins, the old season pass will disappear along with all of
 
 publishDate: 2022-10-24T15:11:08:190Z
 image: https://media.snap.fan/cdn-cgi/image/format=auto,width=710,height=398,quality=80,fit=cover,gravity=top/news/original_images/WakandaForeverSeason_HjJVA2I.png
-slug: "/news/wakanda-forever/"
+slug: "MarvelSnapDataTracker/news/wakanda-forever/"
 ---
 
 ### Patch 8.7 New Variants and Unreleased Card Changes
