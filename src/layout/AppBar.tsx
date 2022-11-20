@@ -8,7 +8,7 @@ import AppBarItems from "./components/AppBarItems";
 const AppBar = (props:any) => {
     return <Main>
               <Content>
-                <Row><a href="~/"><LogoSnap src= "https://assets.snap.fan/files/site/snap-logo.93b7933eb47bb8103e26.webp" alt="Logo" /></a></Row>
+                <Row><a href="/"><LogoSnap src= "https://assets.snap.fan/files/site/snap-logo.93b7933eb47bb8103e26.webp" alt="Logo" /></a></Row>
                 <Row>Cards</Row>
                 <Row>Decks</Row>
                 <Row>News</Row>
