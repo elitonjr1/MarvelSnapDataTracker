@@ -4,11 +4,11 @@ import styled from 'styled-components';
 const Footer = () => {
     return <FooterDiv>
         <Item>
-            <Link href="/NewsDetails">News</Link>
+            <Link href="~/NewsDetails">News</Link>
         </Item>
 
         <Item>
-            <Link href="/Signup">Sign Up</Link>
+            <Link href="~/Signup">Sign Up</Link>
         </Item>
         
     </FooterDiv>
