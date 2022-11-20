@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Layout from '../layout/Layout'
 import MainParagraph from "../layout/components/MainParagraph";
+import { HeaderProps } from "../layout/components/MainParagraph";
 import News from "../layout/components/News";
 import styled from "styled-components";
+import { graphql, PageProps } from "gatsby";
 
 const items = Array.from( { length: 3 }, (_, index) => ({
   title: `Title ${index}`,
@@ -12,27 +14,40 @@ const items = Array.from( { length: 3 }, (_, index) => ({
   index: index
 }) )
 
-const Home = () => { 
-  
+const Home = ({ data } : PageProps) => {   
+  const headerProps = (data as any).json as HeaderProps;
+  const itemsProps = (data as any).allMarkdownRemark.nodes.map(({frontmatter} : any) => ({...frontmatter}));
+
   return <Layout>
       <header>
-        <MainParagraph title="Marvel Snap Card and Deck Database"
-                       description="Welcome to Marvel Snap, your home for top Marvel Snap Decks, Card Database and Meta analysis!"></MainParagraph>
+        <MainParagraph {...headerProps}></MainParagraph>
       </header>
       <div className="container">        
-        <News items={items}></News>
+        <News items={itemsProps}></News>
       </div>
   </Layout> 
 } 
 
 export default Home;
 
-const TitleHeader = styled.h2`
-    word-wrap: break-word;
-    font-family: 'Ultimatum Heavy Italic,Helvetica Neue,Arial,Sans-Serif';
-    line-height: 1.2;
-    word-break: break-word;
-    font-size: calc(1.375rem + 1.5vw);
-`
 
+export const pageQuery = graphql`
+  {
+    json {
+      description
+      title
+    }
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          description
+          image
+          publishDate
+          title
+          slug
+        }
+      }
+    }
+  }
+`
 

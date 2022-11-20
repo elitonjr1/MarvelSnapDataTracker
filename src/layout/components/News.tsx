@@ -12,6 +12,7 @@ export type NewsItemProps = {
     postDate: string;
     image: string;
     index: number;
+    slug: string;
 }
 
 const News = ( {items} : NewsProps ) => {
@@ -25,8 +26,8 @@ const News = ( {items} : NewsProps ) => {
 
 export default News;
 
-const Item = ({ title, autor, postDate, image } : NewsItemProps) => {
-    return <Link href="/">
+const Item = ({ title, autor, postDate, image, slug } : NewsItemProps) => {
+    return <Link href={slug}>
         <Img src={image} alt={title}></Img>
     </Link>
 }
